@@ -27,13 +27,14 @@ class MyTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RE", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RE", for: indexPath) as! FoodStoreTableViewCell
 
         // Configure the cell...
         
-        cell.textLabel?.text = foodStoreNames[indexPath.row]
-        cell.imageView?.image = UIImage(named: foodStoreThumbnail[indexPath.row])
-        cell.detailTextLabel?.text = foodStoreAddress[indexPath.row]
+        cell.foodStoreCellName.text = foodStoreNames[indexPath.row]
+        cell.foodStoreCellImage.image = UIImage(named: foodStoreThumbnail[indexPath.row])
+        cell.foodStoreCellAddress.text = foodStoreAddress[indexPath.row]
+        cell.foodStoreCellTel.text = foodStoreTel[indexPath.row]
 
         return cell
     }
