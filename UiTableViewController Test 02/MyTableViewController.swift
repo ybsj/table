@@ -3,26 +3,17 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
     
-    var data = ["홍길동", "임꺽정", "을지문덕", "이순신", "강감찬"]
+    var foodStoreNames = ["늘해랑", "번개반점", "아딸", "왕짜장", "토마토 도시락", "홍콩반점"]
+    var foodStoreThumbnail = ["01", "02", "03", "04", "05", "06"]
+    var foodStoreAddress = ["부산광역시 부산진구 양정동 418-282","부산광역시 부산진구 양정동 418-282","부산광역시 부산진구 양정동 418-282","부산광역시 부산진구 양정동 418-282","부산광역시 부산진구 양정동 418-282","부산광역시 부산진구 양정동 418-282" ]
+    var foodStoreTel = ["051-852-9969","051-852-9969","051-852-9969","051-852-9969","051-852-9969","051-852-9969"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.title = "배달의 DIT"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -31,7 +22,7 @@ class MyTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return data.count
+        return foodStoreNames.count
     }
 
     
@@ -40,7 +31,9 @@ class MyTableViewController: UITableViewController {
 
         // Configure the cell...
         
-        cell.textLabel?.text = data[indexPath.row]
+        cell.textLabel?.text = foodStoreNames[indexPath.row]
+        cell.imageView?.image = UIImage(named: foodStoreThumbnail[indexPath.row])
+        cell.detailTextLabel?.text = foodStoreAddress[indexPath.row]
 
         return cell
     }
