@@ -128,7 +128,17 @@ class MyTableViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow   {
                let destinationController = segue.destination as! DetailViewController
+                //이름 넘기기
                 destinationController.title = foodStoreNames[indexPath.row]
+                
+                //이미지 넘기기
+                destinationController.cellImage = foodStoreThumbnail[indexPath.row]
+                
+                //번호 넘기기
+                destinationController.locationName = foodStoreAddress[indexPath.row]
+                
+                //주소 넘기기
+                destinationController.telNum = foodStoreTel[indexPath.row]
                 
             }
         }

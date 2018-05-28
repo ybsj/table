@@ -101,6 +101,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="RRi-3m-XHm">
                                 <rect key="frame" x="0.0" y="64" width="375" height="291"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="location : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcA-XI-zNK">
+                                <rect key="frame" x="50" y="401" width="258" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tel : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCF-EG-0nT">
+                                <rect key="frame" x="50" y="477" width="258" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -111,6 +125,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ute-kD-P7t"/>
                     </view>
+                    <connections>
+                        <outlet property="cellImageView" destination="RRi-3m-XHm" id="7q4-sQ-Npw"/>
+                        <outlet property="location" destination="pcA-XI-zNK" id="Qb0-FV-Vkv"/>
+                        <outlet property="tel" destination="HCF-EG-0nT" id="dH2-gv-68M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8eg-xy-wgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
