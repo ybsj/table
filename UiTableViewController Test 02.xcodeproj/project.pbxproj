@@ -13,6 +13,7 @@
 		741C17EF20AC061400FE6E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741C17ED20AC061400FE6E1E /* LaunchScreen.storyboard */; };
 		741C17F720AC06C400FE6E1E /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741C17F620AC06C400FE6E1E /* MyTableViewController.swift */; };
 		7429401420B29D5C0047FB95 /* FoodStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7429401320B29D5C0047FB95 /* FoodStoreTableViewCell.swift */; };
+		748299E920BBDA1D00490ECD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748299E820BBDA1D00490ECD /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		741C17F020AC061400FE6E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		741C17F620AC06C400FE6E1E /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		7429401320B29D5C0047FB95 /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
+		748299E820BBDA1D00490ECD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7429401320B29D5C0047FB95 /* FoodStoreTableViewCell.swift */,
 				741C17E420AC061400FE6E1E /* AppDelegate.swift */,
 				741C17E820AC061400FE6E1E /* Main.storyboard */,
+				748299E820BBDA1D00490ECD /* DetailViewController.swift */,
 				741C17F620AC06C400FE6E1E /* MyTableViewController.swift */,
 				741C17EB20AC061400FE6E1E /* Assets.xcassets */,
 				741C17ED20AC061400FE6E1E /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 				741C17E520AC061400FE6E1E /* AppDelegate.swift in Sources */,
 				7429401420B29D5C0047FB95 /* FoodStoreTableViewCell.swift in Sources */,
 				741C17F720AC06C400FE6E1E /* MyTableViewController.swift in Sources */,
+				748299E920BBDA1D00490ECD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

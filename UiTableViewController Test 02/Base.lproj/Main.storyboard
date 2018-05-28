@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,6 +75,7 @@
                                     <outlet property="foodStoreCellImage" destination="lXn-zk-6wU" id="Kus-h3-ZTO"/>
                                     <outlet property="foodStoreCellName" destination="sqj-87-4a4" id="L5z-Gu-A5j"/>
                                     <outlet property="foodStoreCellTel" destination="R5w-r8-Sfk" id="LZq-zm-Wmv"/>
+                                    <segue destination="2mA-Ua-VeF" kind="show" identifier="showDetail" id="v9I-9o-mwP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -82,22 +84,26 @@
                             <outlet property="delegate" destination="cFp-Sf-CKj" id="JhQ-2C-NdH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fHx-4e-WvK">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="Dii-SY-dNv">
-                            <connections>
-                                <action selector="editable:" destination="cFp-Sf-CKj" id="d8y-wN-X82"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="zBz-BG-pFy">
-                            <connections>
-                                <action selector="nonEditable:" destination="cFp-Sf-CKj" id="o63-hn-nxr"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="fHx-4e-WvK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppm-sE-6qu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="960.79999999999995" y="59.820089955022496"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="wKQ-bc-qYh">
+            <objects>
+                <viewController id="2mA-Ua-VeF" customClass="DetailViewController" customModule="UiTableViewController_Test_02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xgo-3Z-gTk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ute-kD-P7t"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8eg-xy-wgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747" y="65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="STE-sq-WCd">
