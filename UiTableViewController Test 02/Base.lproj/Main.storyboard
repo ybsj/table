@@ -82,7 +82,18 @@
                             <outlet property="delegate" destination="cFp-Sf-CKj" id="JhQ-2C-NdH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fHx-4e-WvK"/>
+                    <navigationItem key="navigationItem" id="fHx-4e-WvK">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="Dii-SY-dNv">
+                            <connections>
+                                <action selector="editable:" destination="cFp-Sf-CKj" id="d8y-wN-X82"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="zBz-BG-pFy">
+                            <connections>
+                                <action selector="nonEditable:" destination="cFp-Sf-CKj" id="o63-hn-nxr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppm-sE-6qu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
