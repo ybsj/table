@@ -126,7 +126,11 @@ class MyTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "showDetail" {
-            
+            if let indexPath = tableView.indexPathForSelectedRow   {
+               let destinationController = segue.destination as! DetailViewController
+                destinationController.title = foodStoreNames[indexPath.row]
+                
+            }
         }
         
         

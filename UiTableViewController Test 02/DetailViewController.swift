@@ -9,6 +9,8 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    var cellImageView = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
